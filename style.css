@@ -32,7 +32,7 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     color: white;
-    background: url('/assets/mv_bg.jpg') no-repeat center center fixed;
+    background: url('/img/mv_bg.jpg') no-repeat center center fixed;
     background-size: cover;
     min-height: 100vh;
     background-color: #000;
@@ -82,7 +82,7 @@ body {
 }
 
 .nav-bar a[href="index.html"]::before {
-    background-image: url('assets/Aqua.webp');
+    background-image: url('img/Aqua.webp');
     filter: drop-shadow(0 0 10px #70DFFD);
 }
 
@@ -93,7 +93,7 @@ body {
 }
 
 .nav-bar a[href="scribbles.html"]::before {
-    background-image: url('assets/Earth.webp');
+    background-image: url('img/Earth.webp');
     filter: drop-shadow(0 0 10px #FCE595);
 }
 
@@ -104,7 +104,7 @@ body {
 }
 
 .nav-bar a[href="toybox.html"]::before {
-    background-image: url('assets/fire.webp');
+    background-image: url('img/fire.webp');
     filter: drop-shadow(0 0 10px #DE4A55);
 }
 
@@ -115,7 +115,7 @@ body {
 }
 
 .nav-bar a[href="bookmarks.html"]::before {
-    background-image: url('assets/mana.webp');
+    background-image: url('img/mana.webp');
     filter: drop-shadow(0 0 10px #FBFFBB);
 }
 
@@ -126,7 +126,7 @@ body {
 }
 
 .nav-bar a[href="shrine.html"]::before {
-    background-image: url('assets/wind.webp');
+    background-image: url('img/wind.webp');
     filter: drop-shadow(0 0 10px #A8FECA);
 }
 
