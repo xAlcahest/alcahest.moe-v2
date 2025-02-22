@@ -86,46 +86,46 @@ body {
     filter: drop-shadow(0 0 10px #70DFFD);
 }
 
-.nav-bar a[href="scribbles.html"] {
+.nav-bar a[href="grimoire.html"] {
     color: #FCE595;
     text-shadow: 0 0 15px rgba(252, 229, 149, 0.8),
                  0 0 25px rgba(252, 229, 149, 0.5);
 }
 
-.nav-bar a[href="scribbles.html"]::before {
+.nav-bar a[href="grimoire.html"]::before {
     background-image: url('assets/Earth.webp');
     filter: drop-shadow(0 0 10px #FCE595);
 }
 
-.nav-bar a[href="toybox.html"] {
+.nav-bar a[href="laboratory.html"] {
     color: #DE4A55;
     text-shadow: 0 0 15px rgba(222, 74, 85, 0.8),
                  0 0 25px rgba(222, 74, 85, 0.5);
 }
 
-.nav-bar a[href="toybox.html"]::before {
+.nav-bar a[href="laboratory.html"]::before {
     background-image: url('assets/fire.webp');
     filter: drop-shadow(0 0 10px #DE4A55);
 }
 
-.nav-bar a[href="bookmarks.html"] {
+.nav-bar a[href="codex.html"] {
     color: #FBFFBB;
     text-shadow: 0 0 15px rgba(251, 255, 187, 0.8),
                  0 0 25px rgba(251, 255, 187, 0.5);
 }
 
-.nav-bar a[href="bookmarks.html"]::before {
+.nav-bar a[href="codex.html"]::before {
     background-image: url('assets/mana.webp');
     filter: drop-shadow(0 0 10px #FBFFBB);
 }
 
-.nav-bar a[href="shrine.html"] {
+.nav-bar a[href="reliquary.html"] {
     color: #A8FECA;
     text-shadow: 0 0 15px rgba(168, 254, 202, 0.8),
                  0 0 25px rgba(168, 254, 202, 0.5);
 }
 
-.nav-bar a[href="shrine.html"]::before {
+.nav-bar a[href="reliquary.html"]::before {
     background-image: url('assets/wind.webp');
     filter: drop-shadow(0 0 10px #A8FECA);
 }
@@ -149,7 +149,7 @@ body {
 
 .main-content {
     border: 2px solid var(--color-gold);
-    padding: 20px;
+    padding: 2rem;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.75);
     backdrop-filter: blur(10px);
@@ -162,31 +162,36 @@ body {
 /* Layout specifico per la home */
 .home-page {
     max-width: 1200px;
+    justify-content: space-between;
 }
 
 .home-content {
     width: 800px;
     max-width: 60%;
+    margin-left: 20px;
 }
 
 /* Layout per le pagine secondarie */
-.scribbles-page,
-.toybox-page,
-.bookmarks-page,
-.shrine-page {
+.grimoire-page,
+.laboratory-page,
+.codex-page,
+.reliquary-page {
     max-width: 1200px;
+    justify-content: center;
 }
 
-.scribbles-content,
-.toybox-content,
-.bookmarks-content,
-.shrine-content {
-    width: 800px; /* stessa larghezza del main-content della home */
+.grimoire-content,
+.laboratory-content,
+.codex-content,
+.reliquary-content {
+    width: 800px;
+    max-width: 800px;
 }
 
 .sidebar {
-    width: 300px;
-    max-width: 30%;
+    width: 350px;
+    max-width: 35%;
+    margin-right: 20px;
 }
 
 @keyframes gradient-rotation {
@@ -244,10 +249,12 @@ body {
 }
 
 .status-box, .links-box {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto 20px;
     border: 2px solid;
     padding: 20px;
     border-radius: 10px;
-    margin-bottom: 20px;
     text-align: center;
     position: relative;
     background: rgba(0, 0, 0, 0.7);
@@ -539,4 +546,15 @@ h1 {
     .img-small {
         max-width: 200px;
     }
+}
+
+/* Uniforma la spaziatura tra titolo e contenuto */
+.main-content h1 {
+    margin: 0;
+    padding: 1rem 0;
+}
+
+.main-content p {
+    margin: 0;
+    padding: 1rem 0;
 } 

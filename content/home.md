@@ -2,12 +2,12 @@
 
 ![Avatar](https://cdn.discordapp.com/avatars/232607297891729410/61ab2fc0e0e09d9be55a649df0732a54.png?size=4096 "{.img-circle .img-small .img-float-right .img-border}")
 
-Ciao, [Il tuo nome] qui!
+Hi, [Your name] here!
 
-Benvenuto nel mio spazio virtuale. Questo è il mio sito personale dove condivido i miei pensieri, progetti e interessi.
+Welcome to my virtual space. This is my personal website where I share my thoughts, projects and interests.
 
 :::div{.clearfix}
-Qui puoi trovare:
+Here you can find:
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem Ipsum
 :::
