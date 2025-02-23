@@ -56,7 +56,8 @@ body {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    flex-direction: column;
+    gap: 4px;
     position: relative;
     z-index: 2;
 }
@@ -75,15 +76,22 @@ body {
     transition: all 0.3s ease;
 }
 
+.nav-bar a::after {
+    content: '(TEST)';
+    font-size: 0.7rem;
+    opacity: 0.8;
+    margin-top: -2px;
+}
+
 .nav-bar a[href="index.html"] {
-    color: #70DFFD;
-    text-shadow: 0 0 15px rgba(112, 223, 253, 0.8),
-                 0 0 25px rgba(112, 223, 253, 0.5);
+    color: #FBFFBB;
+    text-shadow: 0 0 15px rgba(251, 255, 187, 0.8),
+                 0 0 25px rgba(251, 255, 187, 0.5);
 }
 
 .nav-bar a[href="index.html"]::before {
-    background-image: url('assets/Aqua.webp');
-    filter: drop-shadow(0 0 10px #70DFFD);
+    background-image: url('assets/mana.webp');
+    filter: drop-shadow(0 0 10px #FBFFBB);
 }
 
 .nav-bar a[href="grimoire.html"] {
@@ -109,14 +117,14 @@ body {
 }
 
 .nav-bar a[href="codex.html"] {
-    color: #FBFFBB;
-    text-shadow: 0 0 15px rgba(251, 255, 187, 0.8),
-                 0 0 25px rgba(251, 255, 187, 0.5);
+    color: #70DFFD;
+    text-shadow: 0 0 15px rgba(112, 223, 253, 0.8),
+                 0 0 25px rgba(112, 223, 253, 0.5);
 }
 
 .nav-bar a[href="codex.html"]::before {
-    background-image: url('assets/mana.webp');
-    filter: drop-shadow(0 0 10px #FBFFBB);
+    background-image: url('assets/Aqua.webp');
+    filter: drop-shadow(0 0 10px #70DFFD);
 }
 
 .nav-bar a[href="reliquary.html"] {
@@ -148,13 +156,12 @@ body {
 }
 
 .main-content {
-    border: 2px solid var(--color-gold);
+    border: 2px solid;
     padding: 2rem;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.75);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
     text-align: center;
     color: var(--text-color);
 }
@@ -169,6 +176,17 @@ body {
     width: 800px;
     max-width: 60%;
     margin-left: 20px;
+    border-color: #FBFFBB;
+    box-shadow: 0 0 20px rgba(251, 255, 187, 0.3);
+}
+
+.home-content h1 {
+    color: #FBFFBB;
+    text-shadow: 0 0 15px rgba(251, 255, 187, 0.8);
+}
+
+.home-content a {
+    color: #FBFFBB;
 }
 
 /* Layout per le pagine secondarie */
@@ -180,12 +198,72 @@ body {
     justify-content: center;
 }
 
-.grimoire-content,
-.laboratory-content,
-.codex-content,
+/* GRIMOIRE - Tema Earth (Oro) */
+.grimoire-content {
+    width: 800px;
+    max-width: 800px;
+    border-color: #FCE595;
+    box-shadow: 0 0 20px rgba(252, 229, 149, 0.3);
+}
+
+/* LABORATORY - Tema Fire (Rosso) */
+.laboratory-content {
+    width: 800px;
+    max-width: 800px;
+    border-color: #DE4A55;
+    box-shadow: 0 0 20px rgba(222, 74, 85, 0.3);
+}
+
+/* CODEX - Tema Aqua (Azzurro) */
+.codex-content {
+    width: 800px;
+    max-width: 800px;
+    border-color: #70DFFD;
+    box-shadow: 0 0 20px rgba(112, 223, 253, 0.3);
+}
+
+/* RELIQUARY - Tema Wind (Verde) */
 .reliquary-content {
     width: 800px;
     max-width: 800px;
+    border-color: #A8FECA;
+    box-shadow: 0 0 20px rgba(168, 254, 202, 0.3);
+}
+
+.grimoire-content h1 {
+    color: #FCE595;
+    text-shadow: 0 0 15px rgba(252, 229, 149, 0.8);
+}
+
+.grimoire-content a {
+    color: #FCE595;
+}
+
+.laboratory-content h1 {
+    color: #DE4A55;
+    text-shadow: 0 0 15px rgba(222, 74, 85, 0.8);
+}
+
+.laboratory-content a {
+    color: #DE4A55;
+}
+
+.codex-content h1 {
+    color: #70DFFD;
+    text-shadow: 0 0 15px rgba(112, 223, 253, 0.8);
+}
+
+.codex-content a {
+    color: #70DFFD;
+}
+
+.reliquary-content h1 {
+    color: #A8FECA;
+    text-shadow: 0 0 15px rgba(168, 254, 202, 0.8);
+}
+
+.reliquary-content a {
+    color: #A8FECA;
 }
 
 .sidebar {
@@ -257,7 +335,9 @@ body {
     border-radius: 10px;
     text-align: center;
     position: relative;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     animation: 
         box-shadow-animation 15s ease infinite,
         border-color-animation 15s ease infinite;
@@ -341,8 +421,8 @@ body {
 }
 
 h1 {
-    color: var(--color-gold);
-    text-shadow: var(--gold-shadow);
+    margin-top: 0;
+    text-shadow: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -402,7 +482,7 @@ h1 {
 .post-header {
     margin-bottom: 2rem;
     padding-bottom: 1rem;
-    border-bottom: 1px solid var(--color-gold);
+    border-bottom: 1px solid;
 }
 
 .post-meta {
@@ -463,7 +543,7 @@ h1 {
     height: auto;
     margin: 1rem 0;
     border-radius: 8px;
-    box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .posts-content a {
@@ -519,8 +599,7 @@ h1 {
 }
 
 .img-border {
-    border: 2px solid var(--color-gold);
-    box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+    border: 2px solid;
 }
 
 .img-glow {
@@ -557,4 +636,356 @@ h1 {
 .main-content p {
     margin: 0;
     padding: 1rem 0;
+}
+
+/* Stili comuni per tutti i link nelle pagine */
+.main-content a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.main-content a:hover {
+    text-shadow: 0 0 15px currentColor;
+}
+
+/* Modifica dei colori specifici per ogni link */
+.nav-bar a[href="index.html"]::after {
+    color: #FBFFBB;
+    text-shadow: 0 0 10px rgba(251, 255, 187, 0.5);
+}
+
+.nav-bar a[href="grimoire.html"]::after {
+    color: #FCE595;
+    text-shadow: 0 0 10px rgba(252, 229, 149, 0.5);
+}
+
+.nav-bar a[href="laboratory.html"]::after {
+    color: #DE4A55;
+    text-shadow: 0 0 10px rgba(222, 74, 85, 0.5);
+}
+
+.nav-bar a[href="codex.html"]::after {
+    color: #70DFFD;
+    text-shadow: 0 0 10px rgba(112, 223, 253, 0.5);
+}
+
+.nav-bar a[href="reliquary.html"]::after {
+    color: #A8FECA;
+    text-shadow: 0 0 10px rgba(168, 254, 202, 0.5);
+}
+
+/* Stili specifici per gli elementi interni delle pagine */
+
+/* HOME - Tema Mana (Giallo) */
+.home-content .post-header {
+    border-bottom-color: #FBFFBB;
+}
+
+.home-content .post-meta {
+    color: #FBFFBB;
+}
+
+.home-content .post-meta span {
+    background: rgba(251, 255, 187, 0.1);
+}
+
+.home-content .posts-content h1,
+.home-content .posts-content h2,
+.home-content .posts-content h3,
+.home-content .posts-content h4,
+.home-content .posts-content h5,
+.home-content .posts-content h6 {
+    color: #FBFFBB;
+}
+
+.home-content .img-border {
+    border-color: #FBFFBB;
+    box-shadow: 0 0 15px rgba(251, 255, 187, 0.3);
+}
+
+/* GRIMOIRE - Tema Earth (Oro) */
+.grimoire-content .post-header {
+    border-bottom-color: #FCE595;
+}
+
+.grimoire-content .post-meta {
+    color: #FCE595;
+}
+
+.grimoire-content .post-meta span {
+    background: rgba(252, 229, 149, 0.1);
+}
+
+.grimoire-content .posts-content h1,
+.grimoire-content .posts-content h2,
+.grimoire-content .posts-content h3,
+.grimoire-content .posts-content h4,
+.grimoire-content .posts-content h5,
+.grimoire-content .posts-content h6 {
+    color: #FCE595;
+}
+
+.grimoire-content .img-border {
+    border-color: #FCE595;
+    box-shadow: 0 0 15px rgba(252, 229, 149, 0.3);
+}
+
+/* LABORATORY - Tema Fire (Rosso) */
+.laboratory-content .post-header {
+    border-bottom-color: #DE4A55;
+}
+
+.laboratory-content .post-meta {
+    color: #DE4A55;
+}
+
+.laboratory-content .post-meta span {
+    background: rgba(222, 74, 85, 0.1);
+}
+
+.laboratory-content .posts-content h1,
+.laboratory-content .posts-content h2,
+.laboratory-content .posts-content h3,
+.laboratory-content .posts-content h4,
+.laboratory-content .posts-content h5,
+.laboratory-content .posts-content h6 {
+    color: #DE4A55;
+}
+
+.laboratory-content .img-border {
+    border-color: #DE4A55;
+    box-shadow: 0 0 15px rgba(222, 74, 85, 0.3);
+}
+
+/* CODEX - Tema Aqua (Azzurro) */
+.codex-content .post-header {
+    border-bottom-color: #70DFFD;
+}
+
+.codex-content .post-meta {
+    color: #70DFFD;
+}
+
+.codex-content .post-meta span {
+    background: rgba(112, 223, 253, 0.1);
+}
+
+.codex-content .posts-content h1,
+.codex-content .posts-content h2,
+.codex-content .posts-content h3,
+.codex-content .posts-content h4,
+.codex-content .posts-content h5,
+.codex-content .posts-content h6 {
+    color: #70DFFD;
+}
+
+.codex-content .img-border {
+    border-color: #70DFFD;
+    box-shadow: 0 0 15px rgba(112, 223, 253, 0.3);
+}
+
+/* RELIQUARY - Tema Wind (Verde) */
+.reliquary-content .post-header {
+    border-bottom-color: #A8FECA;
+}
+
+.reliquary-content .post-meta {
+    color: #A8FECA;
+}
+
+.reliquary-content .post-meta span {
+    background: rgba(168, 254, 202, 0.1);
+}
+
+.reliquary-content .posts-content h1,
+.reliquary-content .posts-content h2,
+.reliquary-content .posts-content h3,
+.reliquary-content .posts-content h4,
+.reliquary-content .posts-content h5,
+.reliquary-content .posts-content h6 {
+    color: #A8FECA;
+}
+
+.reliquary-content .img-border {
+    border-color: #A8FECA;
+    box-shadow: 0 0 15px rgba(168, 254, 202, 0.3);
+}
+
+/* Rimuovere i riferimenti a --color-gold dalle classi generiche */
+.post-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid;
+}
+
+.posts-content img {
+    max-width: 100%;
+    height: auto;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.img-border {
+    border: 2px solid;
+}
+
+/* TEST PAGE - Tema neutro */
+.test-page {
+    max-width: 1200px;
+    justify-content: center;
+}
+
+.test-content {
+    width: 800px;
+    max-width: 800px;
+    border-color: #FFFFFF;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.test-content h1 {
+    color: #FFFFFF;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+}
+
+.test-content a {
+    color: #FFFFFF;
+}
+
+/* Box e Layout Styles */
+.content-box {
+    display: flex;
+    margin: 2rem 0;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    gap: 2rem;
+    padding: 1.5rem;
+}
+
+.left-box {
+    flex-direction: row;
+}
+
+.right-box {
+    flex-direction: row-reverse;
+}
+
+.center-box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.image-container {
+    flex: 0 0 auto;
+    max-width: 300px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.text-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-container p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.custom-box {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-left: 4px solid currentColor;
+}
+
+/* Box Variants */
+.info-box {
+    border-color: #70DFFD;
+}
+
+.warning-box {
+    border-color: #FCE595;
+}
+
+.danger-box {
+    border-color: #DE4A55;
+}
+
+.success-box {
+    border-color: #A8FECA;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .content-box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .image-container {
+        width: 100%;
+        max-width: 200px;
+    }
+}
+
+.news-box {
+    display: flex;
+    gap: 20px;
+    padding: 15px;
+    margin: 20px 0;
+    background: rgba(0,0,0,0.2);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
+}
+
+.news-image {
+    flex: 0 0 200px;
+}
+
+.news-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.news-content {
+    flex: 1;
+}
+
+.news-content h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.2rem;
+}
+
+.news-content p {
+    margin: 0;
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    .news-box {
+        flex-direction: column;
+    }
+    .news-image {
+        flex: 0 0 auto;
+    }
+    .news-image img {
+        width: 100% !important;
+        max-width: 300px;
+        margin: 0 auto;
+        display: block;
+    }
 } 
