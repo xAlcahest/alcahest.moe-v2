@@ -78,7 +78,7 @@ body {
 }
 
 .nav-bar a::after {
-    content: '(TEST)';
+    content: '';
     font-size: 0.7rem;
     opacity: 0.8;
     margin-top: -2px;
@@ -651,28 +651,23 @@ h1 {
 
 /* Modifica dei colori specifici per ogni link */
 .nav-bar a[href="index.html"]::after {
-    color: #FBFFBB;
-    text-shadow: 0 0 10px rgba(251, 255, 187, 0.5);
+    content: 'Home';
 }
 
 .nav-bar a[href="grimoire.html"]::after {
-    color: #FCE595;
-    text-shadow: 0 0 10px rgba(252, 229, 149, 0.5);
+    content: 'Blog';
 }
 
 .nav-bar a[href="laboratory.html"]::after {
-    color: #DE4A55;
-    text-shadow: 0 0 10px rgba(222, 74, 85, 0.5);
+    content: 'Projects';
 }
 
 .nav-bar a[href="codex.html"]::after {
-    color: #70DFFD;
-    text-shadow: 0 0 10px rgba(112, 223, 253, 0.5);
+    content: 'Skills';
 }
 
 .nav-bar a[href="reliquary.html"]::after {
-    color: #A8FECA;
-    text-shadow: 0 0 10px rgba(168, 254, 202, 0.5);
+    content: 'About';
 }
 
 /* Stili specifici per gli elementi interni delle pagine */
