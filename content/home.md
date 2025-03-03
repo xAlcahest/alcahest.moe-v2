@@ -1,4 +1,6 @@
-﻿# Alcahest ![Avatar](https://cdn.discordapp.com/avatars/232607297891729410/6d9c8b71146a16e2934de23b13807a05.webp?size=64 "{.img-circle .img-border style='height: 1.5em; width: auto;'}")
+﻿![Avatar](https://cdn.discordapp.com/avatars/232607297891729410/6d9c8b71146a16e2934de23b13807a05.webp?size=64 "{.img-circle .img-border style='display: block; margin: 0 auto; margin-bottom: -25px; height: 4em; width: auto;'}")
+
+# Alcahest
 
 :::div{.clearfix}
 Hello! I'm Alcahest, a big fan of anime, manga, and video games (although I haven't been playing many lately, unfortunately).
