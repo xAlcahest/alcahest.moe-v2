@@ -1,4 +1,4 @@
-# Grimoire
+# <span style="font-family: 'Endor', Arial, sans-serif;">Grimoire</span>
 
 Here you'll find my thoughts, reflections and arcane writings.
 

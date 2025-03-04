@@ -1,4 +1,4 @@
-# Reliquary
+# <span style="font-family: 'Endor', Arial, sans-serif;">Reliquary</span>
 
 A digital sanctuary that holds my most precious inspirations.
 
