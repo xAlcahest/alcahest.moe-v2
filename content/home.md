@@ -1,4 +1,4 @@
-﻿![Avatar](https://cdn.discordapp.com/avatars/232607297891729410/6d9c8b71146a16e2934de23b13807a05.webp?size=64 "{.img-circle .img-border style='display: block; margin: 0 auto; margin-bottom: -25px; height: 4em; width: auto;'}")
+﻿![Avatar](https://cdn.discordapp.com/avatars/232607297891729410/4e9c914177ae42da80a18243713076cb.webp?size=64 "{.img-circle .img-border style='display: block; margin: 0 auto; margin-bottom: -25px; height: 4em; width: auto;'}")
 
 # <span style="font-family: 'Endor', Arial, sans-serif; color: #FFD700; text-shadow: 0 0 15px rgba(255, 215, 0, 0.5);">Alcahest</span>
 
