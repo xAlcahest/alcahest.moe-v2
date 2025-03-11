@@ -19,7 +19,8 @@
     font-style: normal;
 }
 
-/* Dark/Light theme support */
+/* Dark/Light theme support - This is useless until a proper light theme is implemented
+
 @media (prefers-color-scheme: dark) {
     :root {
         --bg-color: rgba(0, 0, 0, 0.7);
@@ -33,6 +34,7 @@
         --text-color: #000;
     }
 }
+*/
 
 body {
     margin: 0;
